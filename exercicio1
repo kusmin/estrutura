@@ -1,0 +1,47 @@
+
+package estrutura_de_dados;
+
+import java.util.Scanner;
+
+
+public class Estrutura_de_dados {
+
+
+    public static void main(String[] args) {
+        int[] s, q;
+        int s1, q1;
+        int aux = 0;
+        
+        Scanner scan = new Scanner(System.in);
+        s1 = scan.nextInt();
+        s = new int[s1];
+        for(int i = 0; i<s1; i++){
+            s[i] = scan.nextInt();
+        }
+       
+        q1 = scan.nextInt();
+        q = new int[q1];
+        for(int i = 0;i<q1; i++){
+            q[i] = scan.nextInt();
+        } 
+        for (int i : s){
+            for(int j : q){
+                if((i==j)){
+                    aux++;
+                    break;
+                    
+                    
+                }
+                }
+            if(aux==0){
+                System.out.print(i + " ");
+                    
+                }
+            aux = 0;
+                
+            }
+            
+        }
+        
+        
+  }
